@@ -32,7 +32,8 @@ function elegirOpcion() {
             deposito = Number(prompt("¿Cuanto depositas?"));
             saldo += deposito;
             //document.write("Tu saldo actual es: " + saldo);
-            document.getElementById("resultado").innerHTML = "Tu Saldo actual es: "+saldo;
+            document.getElementById("resultado").innerHTML = "Depositaste: "+deposito;
+            document.getElementById("resultado2").innerHTML = "Tu Saldo actual es: "+saldo;
             break;
         case 4:
             window.location.href = "pages/salir.html";
