@@ -19,7 +19,7 @@ function elegirOpcion() {
             break;
         case 2:
             retiro=Number(prompt("Cuanto vas a retirar"));
-            if(retiro < saldo && retiro != 0) {
+            if(retiro <= saldo && retiro != 0) {
                 saldo -= retiro;
                  //document.write("Tu saldo actual es: " + saldo);
                 document.getElementById("resultado").innerHTML = "Retiraste: "+retiro;
