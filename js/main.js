@@ -73,9 +73,15 @@ function validarClave(clave,verifClave) {
             entrarAlCajero(nombreUsuario,clave);
         } else{
             alert ("Claves no coinciden");
+            setTimeout(() => {
+                document.location.reload();
+              }, 100);
         }
     } else {
         alert ("Complete la clave para continuar");
+        setTimeout(() => {
+            document.location.reload();
+          }, 100);
     }   
 }
 
@@ -90,6 +96,9 @@ function ingresarClave(nombreUsuario) {
         validarClave(clave,verifClave);    
     } else {
         alert ("Complete el Nombre para continuar");
+        setTimeout(() => {
+            document.location.reload();
+          }, 100);
     } 
 }
 
